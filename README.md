@@ -2,7 +2,7 @@
 
 ### Used technologies
 
-- [Next.js 13 (using app directory)](https://nextjs.org/)
+- [Next.js 14 (using app directory)](https://nextjs.org/)
 - [React](https://reactjs.org/)
 - [Mantine](https://mantine.dev/)
 
