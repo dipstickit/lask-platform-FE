@@ -1,0 +1,20 @@
+.header {
+   box-shadow: var(--mantine-shadow-sm);
+   border-bottom: none;
+}
+
+.headerCategory {
+   height: 100%;
+}
+
+.hiddenMobile {
+   @media screen and (max-width: 767px){
+      display: none;
+   }
+}
+
+.hiddenDesktop {
+   @media screen and (min-width: 768px){
+      display: none;
+   }
+}

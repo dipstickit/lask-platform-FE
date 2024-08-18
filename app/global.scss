@@ -1,0 +1,25 @@
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  max-height: 100vh;
+  width: 100%;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+
+* {
+  font-family: var(--font-roboto), sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-poppins), sans-serif;
+}
