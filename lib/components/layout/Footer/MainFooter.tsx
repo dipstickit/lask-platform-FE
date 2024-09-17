@@ -16,13 +16,19 @@ export default function MainFooter() {
           <Logo />
         </div>
         <div className={styles.groups}>
-          {/* @ts-expect-error Server Component */}
           <FooterLinks />
         </div>
       </Container>
       <Container className={styles.afterFooter} size="xl" px="md">
         <Text color="dimmed" size="sm">
-          Created by Michał Marchewczyk
+          Created by{' '}
+          <a
+            href="https://github.com/dipstickit"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            PhuocNguyen
+          </a>
         </Text>
 
         <Group spacing={0} className={styles.social} position="right" noWrap>
