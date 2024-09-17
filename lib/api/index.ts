@@ -2,7 +2,6 @@ import {
   AuthApi,
   CartsApi,
   CategoriesApi,
-  Configuration,
   DeliveryMethodsApi,
   OrdersApi,
   PagesApi,
@@ -14,25 +13,8 @@ import {
   UsersApi,
   WishlistsApi,
 } from './client';
-
+import { configuration } from './config/configuration';
 export * from './client';
-
-export const API_URL =
-  process.env.API_PATH ??
-  process.env.NEXT_PUBLIC_API_PATH ??
-  'http://localhost';
-
-const configuration = new Configuration({
-  basePath: API_URL,
-  middleware: [
-    {
-      onError: async (error) => {
-        throw error.error;
-      },
-    },
-  ],
-  credentials: 'include',
-});
 
 const authApi = new AuthApi(configuration);
 const settingsApi = new SettingsApi(configuration);
